@@ -5,125 +5,137 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre mi</title>
+  <!-- Estilado -->
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
 </head>
 
 <body>
-  <!-- Paso 2: títulos y párrafos -->
-  <section>
-    <h1>Sobre Mi</h1>
-    <h2>Introducción</h2>
-    <p>Hola, me llamo José Ángel. Soy una persona comprometida en aprender cosas nuevas cada día. Este espacio web está
-      dedicado a documentar aspectos clave de mi desarrollo personal y profesional.</p>
+  <!-- Menú principal -->
+  <header>
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="#introduccion">Introducción</a></li>
+        <li><a href="#pasatiempos">Pasatiempos</a></li>
+        <li><a href="#horario">Horario</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <h2>Hoja de Vida</h2>
-    <p>Tengo experiencia en desarrollo web y disfruto con equipos creativos. Mis principales habilidades incluyen HTML,
-      CSS, JavaScript y Python.</p>
+  <!-- contenido principal -->
+  <main>
+    <section id="introduccion">
+      <h1 class="titulo-principal">Sobre Mi</h1>
+      <h2 class="subtitulo">Introducción</h2>
+      <p class="contenido">Hola, me llamo José Ángel. Soy una persona comprometida en aprender cosas nuevas cada día.
+        Este espacio web está dedicado a documentar aspectos clave de mi desarrollo personal y profesional.</p>
 
-  </section>
+      <h2 class="subtitulo">Hoja de Vida</h2>
+      <p class="contenido">Tengo experiencia en desarrollo web y disfruto colaborar con equipos creativos. Mis
+        principales
+        habilidades incluyen HTML,
+        CSS, JavaScript y Python.</p>
 
-  <!-- Paso 3: Imagen y enlaces -->
-  <section>
-    <img src="avatar.svg" alt="avatar sobre mí" style="width:200px; height:auto;">
-    <h2>Mis Redes Sociales</h2>
-    <!-- No tengo redes sociales -->
-    <p>Sígueme en: </p>
-    <ul>
-      <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-      <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-    </ul>
-  </section>
+    </section>
 
-  <!-- Paso 4. Listas -->
-  <section>
-    <h2>Mis Pasatiempos</h2>
-    <ul>
-      <li>Leer</li>
-      <li>Programar</li>
-      <li>Practicar deportes</li>
-    </ul>
+    <!-- Imagen y enlaces -->
+    <section id="redes-sociales">
+      <img src="avatar.svg" alt="avatar sobre mí" class="imagen-avatar">
+      <h2 class="subtitulo">Mis Redes Sociales</h2>
+      <p class="contenido">Sígueme en: </p>
+      <ul class="enlaces">
+        <li><a href="https://facebook.com" target="_blank" class="enlace-social">Facebook</a></li>
+        <li><a href="https://twitter.com" target="_blank" class="enlace-social">Twitter</a></li>
+        <li><a href="https://linkedin.com" target="_blank" class="enlace-social">LinkedIn</a></li>
+      </ul>
+    </section>
 
-    <h2>Tareas Pendientes</h2>
-    <ol>
-      <li>Leer un ensayo</li>
-      <li>Preparar un almuerzo especial</li>
-      <li>Trotar 15 kilómetros</>
-      </li>
-    </ol>
-  </section>
+    <!-- Listas -->
+    <section id="pasatiempos">
+      <h2 class="subtitulo">Mis Pasatiempos</h2>
+      <ul class="lista">
+        <li>Leer</li>
+        <li>Programar</li>
+        <li>Practicar deportes</li>
+      </ul>
 
-  <!-- Paso 4. Tabla -->
-  <section>
-    <h2>Horario Semanal</h2>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Día</th>
-          <th>Actividad</th>
-        </tr>
-      </thead>
+      <h2 class="subtitulo">Tareas Pendientes</h2>
+      <ol class="lista-ordenada">
+        <li>Leer un ensayo</li>
+        <li>Preparar un almuerzo especial</li>
+        <li>Trotar 15 kilómetros</li>
+      </ol>
+    </section>
 
-      <tbody>
-        <tr>
-          <td>Lunes</td>
-          <td>Leer un ensayo</td>
-        </tr>
+    <!-- Tabla -->
+    <section id="horario" class="seccion-tabla">
+      <h2 class="subtitulo">Horario Semanal</h2>
+      <table class="tabla">
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Actividad</th>
+          </tr>
+        </thead>
 
-        <tr>
-          <td>Martes</td>
-          <td></td>
-        </tr>
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>Leer un ensayo</td>
+          </tr>
+          <tr>
+            <td>Martes</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Miércoles</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Jueves</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>Preparar un almuerzo especial</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>Trotar 15 kilómetros</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-        <tr>
-          <td>Miércoles</td>
-          <td></td>
-        </tr>
+    <!-- formulario -->
+    <section id="contacto">
+      <br>
+      <h2 class="subtitulo">Contacto: </h2>
+      <form action="#" method="POST" class="formulario-contacto">
+        <label for="nombre" class="etiqueta">Tu nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required class="campo"><br><br>
 
-        <tr>
-          <td>Jueves</td>
-          <td></td>
-        </tr>
+        <label for="email" class="etiqueta">Tu correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required class="campo"><br><br>
 
-        <tr>
-          <td>Viernes</td>
-          <td>Preparar un almuerzo especial</td>
-        </tr>
+        <label for="asunto" class="etiqueta">Motivo de contacto:</label>
+        <textarea id="asunto" name="asunto" placeholder="¿Por qué deseas contactarse?" rows="3" cols="50" required
+          class="campo"></textarea><br><br>
 
-        <tr>
-          <td>Sábado</td>
-          <td></td>
-        </tr>
-
-        <tr>
-          <td>Domingo</td>
-          <td>Trotar 15 kilómetros</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <!-- paso 5 formulario -->
-  <section>
-    <br>
-    <h2>Contacto: </h2>
-    <form action="#" method="POST">
-
-      <label for="nombre">Tu nombre:</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
-
-      <label for="email">Tu correo electrónico:</label>
-      <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required><br><br>
-
-      <label for="asunto">Motivo de contacto:</label>
-      <textarea id="asunto" name="asunto" placeholder="¿Por qué deseas contactarse?" rows="3" cols="50"
-        required></textarea><br><br>
-
-      <button type="submit">Enviar</button>
-    </form>
-
-  </section>
+        <button type="submit" class="boton">Enviar</button>
+      </form>
+    </section>
+  </main>
   <footer>
-    <br>
+    <h6>Esta es una página web de prueba con la que estoy aprendiendo, gracias por ver :D.</h6>
   </footer>
 
 </body>
