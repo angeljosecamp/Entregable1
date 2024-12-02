@@ -45,7 +45,6 @@ header {
   height: 40px;
   z-index: 999;
   background-color: var(--secondary-color);
-
 }
 
 
@@ -80,7 +79,6 @@ header {
   padding: 40px;
   max-width: 800px;
   margin: 0px;
-
 }
 
 #introduccion h1 {
@@ -93,7 +91,6 @@ header {
   font-size: 1.4rem;
   font-weight: bold;
   padding-top: 30px;
-
 }
 
 #introduccion p {
@@ -173,7 +170,6 @@ header {
   border-collapse: collapse;
   margin-top: 20px;
   overflow: auto;
- 
 }
 
 .tabla th, .tabla td {
@@ -262,6 +258,21 @@ header {
 
 .boton:active {
   transform: scale(1);
+}
+
+/* Estilo para los errores */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+input:invalid, textarea:invalid {
+  border: 2px solid red;
+}
+
+input:valid, textarea:valid {
+  border: 2px solid green;
 }
 
 /* Pie de página */

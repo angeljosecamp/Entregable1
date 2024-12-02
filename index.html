@@ -8,8 +8,6 @@
   <!-- Estilado -->
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
 
 </head>
 
@@ -48,27 +46,27 @@
       <h2 class="subtitulo">Mis Redes Sociales</h2>
       <p class="contenido">Sígueme en: </p>
       <ul class="enlaces">
-        <li><a href="https://facebook.com" target="_blank" class="enlace-social">Facebook</a></li>
-        <li><a href="https://twitter.com" target="_blank" class="enlace-social">Twitter</a></li>
-        <li><a href="https://linkedin.com" target="_blank" class="enlace-social">LinkedIn</a></li>
+        <li><a class="enlace-social href=" https://facebook.com" target="_blank" rel="noopener"">Facebook</a></li>
+        <li><a class=" enlace-sociala href="https://twitter.com" target="_blank" rel="noopener"">Twitter</a></li>
+        <li><a class=" enlace-social href="https://linkedin.com" target="_blank" rel="noopener"">LinkedIn</a></li>
       </ul>
     </section>
 
     <!-- Listas -->
     <section id="pasatiempos">
-      <h2 class="subtitulo">Mis Pasatiempos</h2>
-      <ul class="lista">
-        <li>Leer</li>
-        <li>Programar</li>
-        <li>Practicar deportes</li>
-      </ul>
+            <h2 class="subtitulo">Mis Pasatiempos</h2>
+            <ul class="lista">
+              <li>Leer</li>
+              <li>Programar</li>
+              <li>Practicar deportes</li>
+            </ul>
 
-      <h2 class="subtitulo">Tareas Pendientes</h2>
-      <ol class="lista-ordenada">
-        <li>Leer un ensayo</li>
-        <li>Preparar un almuerzo especial</li>
-        <li>Trotar 15 kilómetros</li>
-      </ol>
+            <h2 class="subtitulo">Tareas Pendientes</h2>
+            <ol class="lista-ordenada">
+              <li>Leer un ensayo</li>
+              <li>Preparar un almuerzo especial</li>
+              <li>Trotar 15 kilómetros</li>
+            </ol>
     </section>
 
     <!-- Tabla -->
@@ -117,18 +115,20 @@
 
     <!-- formulario -->
     <section id="contacto">
-      <br>
       <h2 class="subtitulo">Contacto: </h2>
-      <form action="#" method="POST" class="formulario-contacto">
+      <form id="formulario-contacto" action="#" method="POST" class="formulario-contacto" novalidate>
         <label for="nombre" class="etiqueta">Tu nombre:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required class="campo"><br><br>
+        <input id="nombre" class="campo" type="text" name="nombre" placeholder="Tu nombre" >
+        <div id="error-nombre" class="error"></div><br><br>
 
         <label for="email" class="etiqueta">Tu correo electrónico:</label>
-        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required class="campo"><br><br>
+        <input id="email" class="campo" type="email" name="email" placeholder="Tu correo electrónico" >
+        <div id="error-email" class="error"></div><br><br>
 
         <label for="asunto" class="etiqueta">Motivo de contacto:</label>
-        <textarea id="asunto" name="asunto" placeholder="¿Por qué deseas contactarse?" rows="3" cols="50" required
-          class="campo"></textarea><br><br>
+        <textarea id="asunto" class="campo" name="asunto" placeholder="¿Por qué desea contactarse?" rows="3" cols="50" 
+          maxlength="200"></textarea>
+        <div id="error-asunto" class="error"></div><br><br>
 
         <button type="submit" class="boton">Enviar</button>
       </form>
@@ -137,7 +137,7 @@
   <footer>
     <h6>Esta es una página web de prueba con la que estoy aprendiendo, gracias por ver :D.</h6>
   </footer>
-
+  <script src="script.js"></script>
 </body>
 
 </html>
